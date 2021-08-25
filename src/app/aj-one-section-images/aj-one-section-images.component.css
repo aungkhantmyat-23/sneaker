@@ -1,0 +1,21 @@
+.container{
+    z-index: 99;
+    padding: 20px;
+    margin-top: -10%;
+    background: transparent;
+    overflow: hidden;
+}
+
+.aj1{
+    position: absolute;
+    width: 500px;
+    overflow-x: hidden;
+}
+
+
+@media only screen and (max-width: 1050px) {
+    .aj1{
+        width: 400px;
+    }
+}
+

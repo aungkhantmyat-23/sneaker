@@ -1,0 +1,101 @@
+
+.ellipse-container{
+    width: 508px;
+    height: 508px;
+    
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-32%,-50%);
+    border-radius: 50%;
+    margin: 0 auto;
+   z-index: -1;
+}
+.ellipse{
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+}
+.ellipse .thin{
+    width: 100%;
+    height: 100%;
+    border-width: 1px;
+    border-color: #494949;
+    opacity: 0.5;
+}
+.ellipse .thick{
+    width: 92%;
+    height: 92%;
+    border-width: 10px;
+    border-color: white;
+    transform: rotate(-45deg);
+    align-items: center;
+    top: 10px;
+    left: 10px;
+}
+.ellipse .red{
+    width: 92%;
+    height: 92%;
+    border-width: 10px;
+    border-color:rgb(221, 36, 36) transparent;
+    transform: rotate(-45deg);
+    top: 10px;
+    left: 10px;
+    animation: ellipseRotate 12s ease-in-out infinite;
+}
+
+@keyframes ellipseRotate{
+    0%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(-405deg);
+    }
+}
+
+
+
+@media only screen and (max-width: 1050px) {
+    
+.ellipse-container{
+    width: 530px;
+    height: 530px;
+    transform: translate(-36%,-50%);
+}
+}
+
+@media only screen and (max-width: 800px) {
+    
+.ellipse-container{
+    top: 30%;
+    left: 40%;
+    transform: translate(-42%,-45%);
+}
+}
+
+@media only screen and (max-width: 450px) {
+       
+.ellipse-container{
+    top: 200px;
+    left: 0%;
+    transform: translate(1%,-50%);
+    width: 260px;
+    height: 260px;
+}
+.ellipse .thick{
+    width: 90%;
+    height: 90%;
+    transform: rotate(-0deg);
+    top: 5px;
+    left: 5px;
+}
+.ellipse .red{
+    width: 89%;
+    height: 89%;
+    border-width: 5px;
+    border-color:rgb(221, 36, 36) transparent;
+    transform: rotate(-0deg);
+   
+}
+   
+}

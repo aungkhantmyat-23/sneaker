@@ -1,0 +1,387 @@
+
+.entrance{
+    min-height: 100vh;
+    background: url("../../assets/images/ronit-singh-sdXYLWDUvgk-unsplash.jpg");
+    background-size: cover;
+    background-position: center 30%;
+}
+svg{
+    width: 520px;
+    animation: fill 0.5s ease forwards 3.5s;
+    padding: 15px;
+}
+
+#logo path:nth-child(1){
+    stroke-dasharray:2528;
+    stroke-dashoffset: 2528;
+    animation: line-anime 2s ease forwards;
+  }
+  #logo path:nth-child(2){
+    stroke-dasharray:1865;
+    stroke-dashoffset: 1865;
+    animation: line-anime 2s ease forwards 1s;
+  }
+  #logo path:nth-child(3){
+    stroke-dasharray:1926;
+    stroke-dashoffset: 1926;
+    animation: line-anime 2s ease forwards 0.4s;
+  }
+  #logo path:nth-child(4){
+    stroke-dasharray:1107;
+    stroke-dashoffset: 1107;
+    animation: line-anime 2s ease forwards 0.7s;
+  }
+  
+  @keyframes line-anime{
+    to{
+      stroke-dashoffset: 0;
+  
+    }
+  }
+  
+  @keyframes fill{
+    from{
+      fill: transparent;
+    }
+    to{
+      fill: transparent;
+    }
+  }
+
+.intro{
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.intro-text{
+    text-align: center;
+}
+.hide .text{
+    font-size: 80px;
+    padding: 30px;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(#911e2b96,#911e2b96),url("../../assets/images/smith-major-_UsZrKhbP-8-unsplash2.jpg");
+    background-size: cover ;
+    background-position: center;
+    -webkit-background-clip: text;
+}
+.hide{
+    background-color: black;
+    overflow: hidden;
+}
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
+.slider{
+    background: url("../../assets/images/2497087.jpg");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    z-index: 2;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    color: white;
+}
+nav h1 {
+    font-weight: lighter;
+    font-size:30px;
+    padding-left: 20px;
+
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    padding-right: 20px;
+    cursor:pointer
+}
+.nav-links li{
+    padding: 10px;
+    font-size: 20px;
+} 
+.nav-links li:hover{
+    color:#911e2c ;
+}
+.hover-underline-animation{
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+.hover-underline-animation::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #911e2c;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.big-text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    font-size: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bolder;
+    color: transparent;
+    background: linear-gradient(#af223296,#af223296),url("../../assets/images/smith-major-_UsZrKhbP-8-unsplash2.jpg");
+    background-size: cover ;
+    background-position: center;
+    -webkit-background-clip: text;
+}
+.header-cue{
+    animation:clear .5s 1.5s forwards;
+    transform: translateY(2rem);
+    z-index: 10;
+    overflow: hidden;
+    text-align: center;
+    
+    align-items: baseline;
+    margin-top: -5%;
+}
+.header-cue p{
+    font-size: 10px;
+    margin-bottom: -5px;
+    color: white;
+}
+.header-cue-icon{
+    animation: slideDown .5s 1.8s forwards, 
+                pulse 2s 4s ease-in-out infinite;
+    transform: translateY(-2rem);
+    opacity: 1;
+    font-size: 12px;
+    color: white;
+    padding-bottom: 2%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.829),rgba(0, 0, 0, 0.829)),url("../../assets/images/20471021.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    margin-bottom:20px;
+  }
+  
+  .sidenav a:hover {
+    color:#911e2c ;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .menu{
+      display: none;
+  }
+ .ph-a{
+     display: none;
+ }
+@keyframes clear{
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes slideDown{
+    from{
+        transform: translateY(-2rem);
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes pulse{
+    0%{
+        transform: none;
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@media only screen and (max-width: 1050px) {
+    svg{
+        width: 720px;
+    }
+    .hide .text{
+        font-size: 100px;
+    }
+    .slider{
+        background: url("../../assets/images/4-44570_michael-jordan-iphone-7-plus-wallpaper-download-data.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    nav h1 {
+        font-size:40px;
+    }
+    .nav-links li{
+        font-size: 25px;
+    } 
+    .big-text{
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-40%);
+        font-size: 150px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .header-cue{
+        margin-top: -8%;
+    }
+    .header-cue p{
+        margin-bottom: -1px;
+        font-size: 15px;
+    }
+    .header-cue-icon{
+        font-size: 20px;
+    }
+    .sidenav a {
+        padding: 10px;
+      }
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+    svg{
+        width: 620px;
+        background-position: center 100%;
+    }
+    .hide .text{
+        font-size: 80px;
+    }
+    nav h1 {
+        font-size:30px;
+        
+    }
+    .nav-links li{
+        font-size: 15px;
+    } 
+    .big-text{
+        font-size: 100px;
+    }
+    .sidenav a {
+        margin-bottom:30px ;
+      }
+}
+
+
+
+@media only screen and (max-width:450px) {
+        
+    .entrance{
+        width: 100%;
+        height: 100%;
+        margin-right: -5%;
+    }
+    svg{
+        width: 350px;  
+    }
+    .hide .text{
+        font-size:50px;
+    }
+    nav h1 {
+        font-size:25px;
+        padding: 5px;
+        padding-left: 15px;
+    }
+    
+    .nav-links li{
+        font-size: 30px;
+        padding: 5px;
+    } 
+    
+    .big-text{
+        font-size: 60px;
+    }
+    .header-cue{
+        margin-top: -16%;
+    }
+    .header-cue p{
+        font-size: 7px;
+    }
+    .header-cue-icon{
+        font-size: 8px;
+    }
+    .sidenav a {
+        padding: 2px 20px 2px 2px;
+        font-size: 15px;
+        margin-bottom: 30px;
+      }
+      .sidenav .closebtn {
+        top: 0;
+        right: 2px;
+        font-size: 26px;
+        margin-left:0px;
+      }
+      .menu{
+        display: block;
+    }
+    .pc-li{
+        display: none;
+    }
+    .ph-a{
+        display: block;
+    }
+}

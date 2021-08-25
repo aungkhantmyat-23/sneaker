@@ -1,0 +1,61 @@
+.container{
+    background: linear-gradient(rgba(0, 0, 0, 0.692),rgba(0, 0, 0, 0.692)),url(../../assets/images/wp4312498-jordan-1-wallpapers.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.container h1{
+    font-size: 70px;
+    text-align: center;
+    padding-top:5%;
+    color: white;
+}
+.grid-container {
+    margin-top: 3%;
+    display: grid;
+  grid-template-columns:  55%  45% ;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.description {
+    padding: 20px;
+    color: white;
+    position: relative;
+  overflow: hidden;
+}
+
+.description h2{
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.description p{
+    font-size: 20px;
+    
+}
+.about-p{
+    padding-bottom: 20px;
+}
+button{
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+button:hover{
+    background: linear-gradient(#911e2b96,#911e2b96),url("../../assets/images/smith-major-_UsZrKhbP-8-unsplash2.jpg");
+    background-size: cover ;
+    background-position: center;
+    border: 2px solid transparent;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+button p{
+    padding: 5px ;
+    padding-top: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
